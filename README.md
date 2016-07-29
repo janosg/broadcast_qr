@@ -1,1 +1,1 @@
-# broadcast_qr
+Simple test project in order to get familiar with packaging Python using Conda. Nevertheless the final result might be useful for someone who needs fast the R matrix from QR decompositions for many small matrices in an numpy array. Speed gains in comparison to numpy or scipy can be in the range of 400x.

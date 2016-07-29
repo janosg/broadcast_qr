@@ -1,0 +1,14 @@
+package:
+    name: broadcast_qr
+    version: "0.0.1"
+
+source:
+    path: ../broadcast_qr
+
+requirements:
+    build:
+        - python
+        - setuptools
+    run:
+        - python
+        - numba
