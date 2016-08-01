@@ -6,8 +6,11 @@ def r_from_qr(arr, scalar):
     """Calculate R of a QR decomposition for matrices in an array.
 
     args:
-        arr (np.ndarray): 3d array of [..., m, n], where m >= n.
-        Arr is overwritten wtih the  R of the QR decomposition.
+        arr (np.ndarray): 3d array of [..., m, n], where m >= n. arr is
+        overwritten wtih the R of the QR decomposition.
+        scalar (np.ndarray): 1d one entry array. This is a dummy argument that
+        is needed because @guvectorize functions need more than one argument.
+        It has no effect on the result.
 
     The algorithm uses Givens Rotations for the triangularization and fully
     exploits the sparseness of the Rotation Matrices.

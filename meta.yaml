@@ -1,14 +1,28 @@
 package:
-    name: broadcast_qr
-    version: "0.0.1"
+  name: broadcast_qr
+  version: "0.0.4"
 
 source:
-    path: ../broadcast_qr
+  path: ../broadcast_qr
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
-        - numba
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - numba
+
+test:
+  files:
+    - tests/broadcast_qr_test.py
+  requires:
+    - nose
+    - numpy
+    - numba
+
+about:
+  home: https://github.com/suri5471/broadcast_qr
+  license: MIT
+  license_file: LICENSE
+  summary: Calculate R of a QR decomposition for matrices in an array
